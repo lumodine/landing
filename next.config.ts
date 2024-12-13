@@ -1,7 +1,15 @@
 import type {NextConfig} from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  useFileSystemPublicRoutes: true,
+  images: {
+    remotePatterns: [
+      {
+        hostname: "cdn.lumodine.com",
+      },
+    ],
+  },
+  output: "standalone",
 };
 
 export default nextConfig;
