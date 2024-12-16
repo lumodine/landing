@@ -12,8 +12,9 @@ export const Footer = () => {
     <footer className="py-12 bg-primary/5">
       <div className="container flex flex-col items-center justify-center gap-6">
         <div className="flex gap-2 items-center justify-center">
-          {socialMedias.map((socialMedia) => (
+          {socialMedias.map((socialMedia: any, socialMediaIndex: number) => (
             <Link
+              key={socialMediaIndex}
               className="bg-primary text-primary-foreground p-2 rounded-full hover:scale-95"
               href={socialMedia.url}
               rel="noopener noreferrer"
