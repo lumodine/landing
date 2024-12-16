@@ -14,7 +14,7 @@ export const Footer = () => {
         <div className="flex gap-2 items-center justify-center">
           <Link
             className="bg-primary text-primary-foreground p-2 rounded-full hover:scale-95"
-            href="https://twitter.com/lumodine"
+            href="https://x.com/lumodine"
             rel="noopener noreferrer"
             target="_blank"
           >
@@ -22,7 +22,7 @@ export const Footer = () => {
           </Link>
           <Link
             className="bg-primary text-primary-foreground p-2 rounded-full hover:scale-95"
-            href="https://instagram.com/lumodine"
+            href="https://instagram.com/lumodine/"
             rel="noopener noreferrer"
             target="_blank"
           >
