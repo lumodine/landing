@@ -1,5 +1,5 @@
-import {Mail, Instagram, X} from "lucide-react";
 import Link from "next/link";
+import socialMedias from "@/constants/socialMedias";
 
 export const Footer = () => {
   const startYear = 2024;
@@ -12,28 +12,16 @@ export const Footer = () => {
     <footer className="py-12 bg-primary/5">
       <div className="container flex flex-col items-center justify-center gap-6">
         <div className="flex gap-2 items-center justify-center">
-          <Link
-            className="bg-primary text-primary-foreground p-2 rounded-full hover:scale-95"
-            href="https://x.com/lumodine"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <X className="w-5 h-5" />
-          </Link>
-          <Link
-            className="bg-primary text-primary-foreground p-2 rounded-full hover:scale-95"
-            href="https://instagram.com/lumodine/"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <Instagram className="w-5 h-5" />
-          </Link>
-          <Link
-            className="bg-primary text-primary-foreground p-2 rounded-full hover:scale-95"
-            href="mailto:support@lumodine.com"
-          >
-            <Mail className="w-5 h-5" />
-          </Link>
+          {socialMedias.map((socialMedia) => (
+            <Link
+              className="bg-primary text-primary-foreground p-2 rounded-full hover:scale-95"
+              href={socialMedia.url}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <socialMedia.icon className="w-5 h-5" />
+            </Link>
+          ))}
         </div>
         <div className="flex gap-2 items-center justify-center text-xs">
           <Link className="inline-flex items-center gap-1 hover:underline" href={"/privacy-policy"}>
