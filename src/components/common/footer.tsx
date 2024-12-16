@@ -39,9 +39,11 @@ export const Footer = () => {
           <Link className="inline-flex items-center gap-1 hover:underline" href={"/privacy-policy"}>
             Gizlilik Politikası
           </Link>
+          <span>&#x2022;</span>
           <Link className="inline-flex items-center gap-1 hover:underline" href={"/cookie-policy"}>
             Çerez Politikası
           </Link>
+          <span>&#x2022;</span>
           <Link
             className="inline-flex items-center gap-1 hover:underline"
             href={"/terms-and-conditions"}

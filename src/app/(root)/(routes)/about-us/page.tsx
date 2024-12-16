@@ -5,10 +5,8 @@ export default function AboutUsPage() {
     <main className="py-12 space-y-12">
       <section className="text-center">
         <div className="container space-y-4">
-          <h1 className="text-4xl font-bold text-brand">
-            Dijitalleşmenin Gücüyle İşletmenizi Büyütün
-          </h1>
-          <p className="text-gray-600">
+          <h1 className="text-4xl font-bold">Dijitalleşmenin Gücüyle İşletmenizi Büyütün</h1>
+          <p>
             Restoranlar ve kafeler için modern bir çözüm sunuyoruz!{" "}
             {process.env.NEXT_PUBLIC_APP_NAME}, işletmelerin menülerini dijitalleştirerek hem
             müşterilere hem de işletme sahiplerine daha iyi bir deneyim sağlamayı amaçlamaktadır.
@@ -18,8 +16,8 @@ export default function AboutUsPage() {
 
       <section>
         <div className="container space-y-4">
-          <h2 className="text-2xl font-semibold text-gray-800">Misyon</h2>
-          <p className="text-gray-600">
+          <h2 className="text-2xl font-semibold">Misyon</h2>
+          <p>
             Teknoloji ile işletmeleri güçlendirmek, müşterilerin ihtiyaçlarını karşılamak ve her iki
             taraf için de sorunsuz bir deneyim sunmak.
           </p>
@@ -28,8 +26,8 @@ export default function AboutUsPage() {
 
       <section>
         <div className="container space-y-4">
-          <h2 className="text-2xl font-semibold text-gray-800">Vizyon</h2>
-          <p className="text-gray-600">
+          <h2 className="text-2xl font-semibold">Vizyon</h2>
+          <p>
             Dünyanın her köşesindeki işletmelere ulaşarak, QR menü kullanımını standart hale getiren
             global bir platform olmak.
           </p>
@@ -38,8 +36,8 @@ export default function AboutUsPage() {
 
       <section>
         <div className="container space-y-4">
-          <h2 className="text-2xl font-semibold text-gray-800">Değerlerimiz</h2>
-          <ul className="list-disc pl-6 text-gray-600 space-y-2">
+          <h2 className="text-2xl font-semibold">Değerlerimiz</h2>
+          <ul className="list-disc pl-6 space-y-2">
             <li>
               <strong>Yenilikçilik:</strong> Her zaman en yeni teknolojilerle hizmet sunmaya
               çalışıyoruz.
@@ -62,8 +60,8 @@ export default function AboutUsPage() {
 
       <section>
         <div className="container space-y-4">
-          <h2 className="text-2xl font-semibold text-gray-800">Bizim Hikayemiz</h2>
-          <p className="text-gray-600">
+          <h2 className="text-2xl font-semibold">Bizim Hikayemiz</h2>
+          <p>
             {process.env.NEXT_PUBLIC_APP_NAME}, restoran sektöründeki dijitalleşme ihtiyacını fark
             eden bir ekip tarafından kuruldu. 2024 yılında faaliyete geçen platformumuz, kısa sürede
             işletme sahiplerinin ihtiyaçlarını karşılayan, kullanıcı dostu bir çözüm olarak dikkat
@@ -76,10 +74,8 @@ export default function AboutUsPage() {
 
       <section>
         <div className="container space-y-4">
-          <h2 className="text-2xl font-semibold text-gray-800">
-            Neden {process.env.NEXT_PUBLIC_APP_NAME}?
-          </h2>
-          <ul className="list-disc pl-6 text-gray-600 space-y-2">
+          <h2 className="text-2xl font-semibold">Neden {process.env.NEXT_PUBLIC_APP_NAME}?</h2>
+          <ul className="list-disc pl-6 space-y-2">
             <li>
               <strong>Kolay Kullanım:</strong> Kullanıcı dostu arayüzümüz ile menülerinizi dakikalar
               içinde oluşturabilirsiniz.

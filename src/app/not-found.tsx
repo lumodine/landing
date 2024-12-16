@@ -13,9 +13,7 @@ export default function NotFoundPage() {
       <div className="text-center">
         <h1 className="font-black text-4xl">Sayfa Bulunamadı!</h1>
 
-        <p className="my-4 text-muted-foreground">
-          Üzgünüz, gitmeye çalıştığınız sayfayı bulamadık.
-        </p>
+        <p className="my-4">Üzgünüz, gitmeye çalıştığınız sayfayı bulamadık.</p>
 
         <Link href={"/"}>
           <Button variant={"default"}>Ana sayfaya dön</Button>
