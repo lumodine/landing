@@ -1,5 +1,26 @@
 import React, {Suspense} from "react";
 import "./globals.css";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: {
+    default: process.env.NEXT_PUBLIC_APP_NAME!,
+    template: `%s - ${process.env.NEXT_PUBLIC_APP_NAME}`,
+  },
+  icons: [
+    {
+      rel: "icon",
+      type: "image/x-icon",
+      url: "/favicon.ico",
+    },
+    {
+      rel: "shortcut icon",
+      type: "image/x-icon",
+      url: "/favicon.ico",
+    },
+  ],
+  robots: "follow, index",
+};
 
 export default function RootLayout({
   children,
