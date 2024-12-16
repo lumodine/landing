@@ -111,19 +111,19 @@ export default async function HomePage() {
 
           <div className="flex flex-wrap justify-center gap-8 mb-12">
             <div className="flex items-center gap-3">
-              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white">
+              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-primary-foreground">
                 <Building2 />
               </div>
               <span className="font-semibold block">İşletmenize özel web sitesi</span>
             </div>
             <div className="flex items-center gap-3">
-              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white">
+              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-primary-foreground">
                 <Banknote />
               </div>
               <span className="font-semibold block">Çoklu para birimi desteği</span>
             </div>
             <div className="flex items-center gap-3">
-              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white">
+              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-primary-foreground">
                 <Globe />
               </div>
               <div>
@@ -131,7 +131,7 @@ export default async function HomePage() {
               </div>
             </div>
             <div className="flex items-center gap-3">
-              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white">
+              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-primary-foreground">
                 <Paintbrush />
               </div>
               <div>
@@ -153,7 +153,7 @@ export default async function HomePage() {
           <div className="grid md:grid-cols-2 gap-12">
             <div>
               <div className="flex items-center gap-3 mb-6">
-                <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white">
+                <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-primary-foreground">
                   <Globe />
                 </div>
                 <h3 className="text-2xl font-bold">Çoklu Dil Desteği</h3>
@@ -174,7 +174,7 @@ export default async function HomePage() {
 
             <div>
               <div className="flex items-center gap-3 mb-6">
-                <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white">
+                <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-primary-foreground">
                   <Banknote />
                 </div>
                 <h3 className="text-2xl font-bold">Çoklu Para Birimi</h3>
