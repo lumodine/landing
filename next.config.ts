@@ -7,6 +7,9 @@ const nextConfig: NextConfig = {
       {
         hostname: "cdn.lumodine.com",
       },
+      {
+        hostname: "cdn.buymeacoffee.com",
+      },
     ],
   },
   output: "standalone",

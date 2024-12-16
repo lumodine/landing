@@ -28,7 +28,11 @@ export const Header = () => {
               Giriş yap <ExternalLink />
             </Button>
           </Link>
-          <Link href={`${process.env.NEXT_PUBLIC_DASHBOARD_URL}/sign-up`} target="_blank">
+          <Link
+            className="animate-bounce"
+            href={`${process.env.NEXT_PUBLIC_DASHBOARD_URL}/sign-up`}
+            target="_blank"
+          >
             <Button size={"sm"}>
               Kayıt ol <ExternalLink />
             </Button>
