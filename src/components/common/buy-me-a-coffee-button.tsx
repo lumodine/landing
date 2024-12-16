@@ -1,19 +1,30 @@
-import Image from "next/image";
+import {Coffee} from "lucide-react";
+import {Button} from "@/components/ui/button";
 
-export const BuyMeACoffeeButton = () => {
+export type BuyMeACoffeeButtonProps = {
+  hideIcon?: boolean;
+  hideText?: boolean;
+};
+
+export const BuyMeACoffeeButton = ({
+  hideIcon = false,
+  hideText = false,
+}: BuyMeACoffeeButtonProps) => {
+  if (hideIcon && hideText) {
+    return null;
+  }
+
   return (
-    <a
-      className="inline-block"
-      href="https://www.buymeacoffee.com/bilaldemir"
-      rel="noreferrer"
-      target="_blank"
-    >
-      <Image
-        alt="Buy Me A Coffee"
-        height={41}
-        src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
-        width={160}
-      />
-    </a>
+    <Button asChild className="text-primary-foreground" variant={"default"}>
+      <a
+        className="inline-block"
+        href="https://www.buymeacoffee.com/bilaldemir"
+        rel="noreferrer"
+        target="_blank"
+      >
+        {!hideIcon && <Coffee />}
+        {!hideText && "Bir kahve ile destek ver"}
+      </a>
+    </Button>
   );
 };
