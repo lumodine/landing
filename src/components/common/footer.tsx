@@ -26,18 +26,18 @@ export const Footer = () => {
         </div>
         <div className="flex gap-2 items-center justify-center text-xs">
           <Link className="inline-flex items-center gap-1 hover:underline" href={"/privacy-policy"}>
-            Gizlilik Politikası
+            Privacy Policy
           </Link>
           <span>&#x2022;</span>
           <Link className="inline-flex items-center gap-1 hover:underline" href={"/cookie-policy"}>
-            Çerez Politikası
+            Cookie Policy
           </Link>
           <span>&#x2022;</span>
           <Link
             className="inline-flex items-center gap-1 hover:underline"
             href={"/terms-and-conditions"}
           >
-            Kullanım Şartları
+            Terms and Conditions
           </Link>
         </div>
         <p className="text-xs">
@@ -45,7 +45,7 @@ export const Footer = () => {
           <Link className="underline" href={process.env.NEXT_PUBLIC_LANDING_URL!} target="_blank">
             {process.env.NEXT_PUBLIC_APP_NAME}
           </Link>{" "}
-          &#x2022; Tüm hakları saklıdır
+          &#x2022; All rights reserved
         </p>
       </div>
     </footer>

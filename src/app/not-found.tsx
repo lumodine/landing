@@ -11,12 +11,12 @@ export default function NotFoundPage() {
   return (
     <div className="grid h-screen px-4 place-content-center">
       <div className="text-center">
-        <h1 className="font-black text-4xl">Sayfa Bulunamadı!</h1>
+        <h1 className="font-black text-4xl">Page Not Found!</h1>
 
-        <p className="my-4">Üzgünüz, gitmeye çalıştığınız sayfayı bulamadık.</p>
+        <p className="my-4">Sorry, we couldn&apos;t find the page you were looking for.</p>
 
         <Link href={"/"}>
-          <Button variant={"default"}>Ana sayfaya dön</Button>
+          <Button variant={"default"}>Go to Home</Button>
         </Link>
       </div>
     </div>

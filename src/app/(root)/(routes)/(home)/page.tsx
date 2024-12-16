@@ -13,81 +13,81 @@ import {
 
 const faqs = [
   {
-    question: `${process.env.NEXT_PUBLIC_APP_NAME} nedir?`,
-    answer: `${process.env.NEXT_PUBLIC_APP_NAME}, restoranlar ve kafeler için dijital QR menü oluşturmanızı sağlayan bir platformdur. Menülerinizi hızlı ve kolay bir şekilde oluşturabilir, çoklu dil desteği ile müşterilerinize farklı dillerde sunabilirsiniz.`,
+    question: `What is ${process.env.NEXT_PUBLIC_APP_NAME}?`,
+    answer: `${process.env.NEXT_PUBLIC_APP_NAME} is a platform that allows you to create digital QR menus for restaurants and cafes. You can easily create your menus, and display them in different languages with multi-language support.`,
   },
   {
-    question: `${process.env.NEXT_PUBLIC_APP_NAME} nasıl çalışır?`,
+    question: `How does ${process.env.NEXT_PUBLIC_APP_NAME} work?`,
     answer:
-      "Sisteme işletmenizi ekledikten sonra menülerinizi düzenlersiniz. Platformumuz, menülerinizi QR kodlar aracılığıyla müşterilere ulaştırır. Müşteriler QR kodu tarayarak doğrudan menüye erişebilirler.",
+      "After adding your business to the system, you can edit your menus. Our platform delivers your menus to customers through QR codes. Customers can directly access the menu by scanning the QR code.",
   },
   {
     question: `${process.env.NEXT_PUBLIC_APP_NAME}’in avantajları nelerdir?`,
     answer:
-      "Menülerin hızlıca güncellenmesi, çoklu dil ve para birimi desteği, temiz ve kullanıcı dostu arayüz, kağıt menü masraflarını ortadan kaldırması gibi avantajları vardır.",
+      "Fast menu updates, multi-language and currency support, clean and user-friendly interface, and eliminating paper menu expenses are some of the advantages.",
   },
   {
-    question: `Hangi işletmeler ${process.env.NEXT_PUBLIC_APP_NAME} kullanabilir?`,
-    answer: `${process.env.NEXT_PUBLIC_APP_NAME}, restoranlar, kafeler, barlar, oteller ve tüm yiyecek-içecek hizmeti sunan işletmeler için uygundur.`,
+    question: `Which businesses can use ${process.env.NEXT_PUBLIC_APP_NAME}?`,
+    answer: `${process.env.NEXT_PUBLIC_APP_NAME} is suitable for restaurants, cafes, bars, hotels, and all food and beverage service providers.`,
   },
   {
-    question: "QR kodlar nasıl oluşturulur?",
+    question: "How are QR codes created?",
     answer:
-      "QR kodlar, işletmenizi ekledikten sonra ${process.env.NEXT_PUBLIC_APP_NAME} panelinden otomatik olarak oluşturulur. Menüdeki değişiklikler QR kodu etkilemez.",
+      "QR codes are automatically created through the ${process.env.NEXT_PUBLIC_APP_NAME} panel after adding your business. Changes in the menu do not affect the QR code.",
   },
   {
-    question: `${process.env.NEXT_PUBLIC_APP_NAME} QR kodları başka bir dilde nasıl görünür?`,
+    question: `${process.env.NEXT_PUBLIC_APP_NAME} QR codes look like in different languages?`,
     answer:
-      "Platformumuz çoklu dil desteği sunar. Müşteriler, tarayıcı veya cihaz ayarlarına göre menüyü uygun dilde görüntüleyebilir.",
+      "Our platform supports multi-language. Customers can view the menu in the appropriate language based on their browser or device settings.",
   },
   {
-    question: "QR kod tarama sonrası hangi bilgileri içerir?",
+    question: "What information is included after scanning the QR code?",
     answer:
-      "Tarayıcı QR kodu taradıktan sonra, menü başlıkları, ürün açıklamaları, fiyat bilgileri ve dil seçenekleri gibi bilgileri içeren bir sayfaya yönlendirilir.",
+      "After scanning the QR code, the browser redirects to a page containing menu headers, product descriptions, price information, and language options.",
   },
   {
-    question: "Menüme resim ekleyebilir miyim?",
-    answer: `Evet, ${process.env.NEXT_PUBLIC_APP_NAME} dashboard’u üzerinden menü öğelerinize resim ekleyebilirsiniz.`,
+    question: "Can I add images to my menu?",
+    answer: `Yes, you can add images to your menu items through the ${process.env.NEXT_PUBLIC_APP_NAME} dashboard.`,
   },
   {
-    question: "QR kodumun çalışmadığını nasıl anlayabilirim?",
+    question: "How can I know if my QR code is not working?",
     answer:
-      "Eğer bir QR kod çalışmıyorsa, sistemimiz size bir uyarı gönderir. Ayrıca dashboard üzerinden QR kod bağlantılarını test edebilirsiniz.",
+      "If a QR code is not working, our system sends you an alert. You can also test the QR code links through the dashboard.",
   },
   {
-    question: `${process.env.NEXT_PUBLIC_APP_NAME}’in fiyatları nelerdir?`,
-    answer: `${process.env.NEXT_PUBLIC_APP_NAME} tamamen ücretsiz bir projedir. Sadece bu projenin gelişmesini ve devam etmesini istiyorsanız projeyi destekleyebilirsiniz.`,
+    question: `What are the prices of ${process.env.NEXT_PUBLIC_APP_NAME}?`,
+    answer: `${process.env.NEXT_PUBLIC_APP_NAME} is a completely free project. If you want to support the development and continuation of this project, you can support it.`,
   },
   {
-    question: "Sorun yaşadığımda nasıl destek alabilirim?",
+    question: "How can I get support if I have an issue?",
     answer:
-      "Herhangi bir sorunla karşılaşırsanız, iletişim sayfamız üzerinden bizimle iletişime geçebilirsiniz. Destek ekibimiz size en kısa sürede yardımcı olacaktır.",
+      "If you have any issues, you can contact us through our contact page. Our support team will assist you as soon as possible.",
   },
   {
-    question: "Verilerim güvende mi?",
-    answer: `Evet, ${process.env.NEXT_PUBLIC_APP_NAME} kişisel verilerinizi GDPR ve KVKK uyumluluğuna uygun olarak saklar. Verileriniz şifrelenir ve güvenli sunucularda korunur.`,
+    question: "Is my data secure?",
+    answer: `Yes, ${process.env.NEXT_PUBLIC_APP_NAME} stores your personal data in compliance with GDPR and KVKK. Your data is encrypted and stored securely on our servers.`,
   },
   {
-    question: "Sisteminiz çevrimdışı çalışabilir mi?",
-    answer: `${process.env.NEXT_PUBLIC_APP_NAME} tamamen çevrimiçi çalışan bir platformdur. Ancak müşteriler QR kodu taradıktan sonra menü sayfasını önbelleğe alabilir ve bağlantı sorunlarında bile içeriği görüntüleyebilir.`,
+    question: "Can your system work offline?",
+    answer: `${process.env.NEXT_PUBLIC_APP_NAME} is a completely online platform. However, customers can cache the menu page after scanning the QR code, and view the content even in case of connection problems.`,
   },
   {
-    question: `Birden fazla şubem var, ${process.env.NEXT_PUBLIC_APP_NAME} kullanabilir miyim?`,
+    question: `Do I have multiple branches, can I use ${process.env.NEXT_PUBLIC_APP_NAME}?`,
     answer:
-      "Evet, çoklu şube desteğimiz sayesinde her şubeniz için ayrı menüler oluşturabilirsiniz.",
+      "Yes, with our multi-branch support, you can create separate menus for each of your branches.",
   },
   {
-    question: "Kendi özel dilimi ekleyebilir miyim?",
-    answer: `Evet, ${process.env.NEXT_PUBLIC_APP_NAME} özel dil ekleme özelliğini destekler. İhtiyaçlarınıza uygun bir dil oluşturabilir ve menü içeriğinizi bu dilde sunabilirsiniz.`,
+    question: "Can I add my own custom language?",
+    answer: `Yes, ${process.env.NEXT_PUBLIC_APP_NAME} supports adding custom languages. You can create a language that suits your needs and display your menu content in that language.`,
   },
   {
-    question: "Müşteriler hangi cihazlarda QR menüyü görüntüleyebilir?",
-    answer: `${process.env.NEXT_PUBLIC_APP_NAME} QR menüleri, internet tarayıcısına sahip herhangi bir cihazda (akıllı telefon, tablet, bilgisayar) görüntülenebilir.`,
+    question: "What devices can customers view the QR menu on?",
+    answer: `${process.env.NEXT_PUBLIC_APP_NAME} QR menus can be viewed on any device with an internet browser (smartphone, tablet, computer).`,
   },
   {
-    question: "QR kodları yazdırmak için özel bir yazıcı gerekli mi?",
+    question: "Do I need a special printer to print QR codes?",
     answer:
-      "Hayır, QR kodlarınızı standart bir yazıcı ile yazdırabilirsiniz. Kodlarınızı menüler, masa kartları veya duvar afişleri üzerinde kullanabilirsiniz.",
+      "No, you can print your QR codes with a standard printer. You can use them on menus, table cards, or wall posters.",
   },
 ];
 
@@ -102,11 +102,11 @@ export default async function HomePage() {
       <section className="py-16">
         <div className="container text-center">
           <p className="text-lg mb-3 text-primary-foreground/80">
-            İşletmeniz için <b>QR Menü</b> oluşturun
+            Create <b>QR Menu</b> for your business
           </p>
           <h1 className="text-5xl font-bold mb-4">{process.env.NEXT_PUBLIC_APP_NAME}</h1>
           <p className="text-xl mb-12">
-            Hızlı, güvenilir ve kullanıcı dostu QR Menü oluşturucu ile tanışın
+            Meet the <b>QR Menu</b> creator, fast, reliable, and user-friendly
           </p>
 
           <div className="flex flex-wrap justify-center gap-8 mb-12">
@@ -114,20 +114,20 @@ export default async function HomePage() {
               <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-primary-foreground">
                 <Building2 />
               </div>
-              <span className="font-semibold block">İşletmenize özel web sitesi</span>
+              <span className="font-semibold block">Custom website for your business</span>
             </div>
             <div className="flex items-center gap-3">
               <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-primary-foreground">
                 <Banknote />
               </div>
-              <span className="font-semibold block">Çoklu para birimi desteği</span>
+              <span className="font-semibold block">Multi-currency support</span>
             </div>
             <div className="flex items-center gap-3">
               <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-primary-foreground">
                 <Globe />
               </div>
               <div>
-                <span className="font-semibold block">Çoklu dil desteği</span>
+                <span className="font-semibold block">Multi-language support</span>
               </div>
             </div>
             <div className="flex items-center gap-3">
@@ -135,14 +135,14 @@ export default async function HomePage() {
                 <Paintbrush />
               </div>
               <div>
-                <span className="font-semibold block">Çoklu yazı tipi/tema desteği</span>
+                <span className="font-semibold block">Multi-font/theme support</span>
               </div>
             </div>
           </div>
 
           <Button asChild className="animate-bounce" size={"lg"} variant={"default"}>
             <Link href={`${process.env.NEXT_PUBLIC_DASHBOARD_URL}/sign-up`} target="_blank">
-              Hemen kullanmaya başla <ExternalLink />
+              Start using now <ExternalLink />
             </Link>
           </Button>
         </div>
@@ -156,11 +156,11 @@ export default async function HomePage() {
                 <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-primary-foreground">
                   <Globe />
                 </div>
-                <h3 className="text-2xl font-bold">Çoklu Dil Desteği</h3>
+                <h3 className="text-2xl font-bold">Multi-language support</h3>
               </div>
               <p className="text-lg mb-6">
-                Menünüzü <b>{languages.length}</b> dilde sunarak uluslararası müşterilerinize
-                kolaylık sağlayın:
+                Display your menu in <b>{languages.length}</b> languages to provide convenience for
+                international customers:
               </p>
               <ul className="grid grid-cols-2 gap-3">
                 {languages.map((language: any, languageIndex: number) => (
@@ -177,10 +177,10 @@ export default async function HomePage() {
                 <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-primary-foreground">
                   <Banknote />
                 </div>
-                <h3 className="text-2xl font-bold">Çoklu Para Birimi</h3>
+                <h3 className="text-2xl font-bold">Multi-currency support</h3>
               </div>
               <p className="text-lg mb-6">
-                <b>{currencies.length}</b> para birimi desteğiyle global ödeme çözümleri:
+                <b>{currencies.length}</b> currency support for global payment solutions:
               </p>
               <ul className="grid grid-cols-2 gap-3">
                 {currencies.map((currency: any, currencyIndex: number) => (
@@ -196,7 +196,7 @@ export default async function HomePage() {
 
       <section className="py-16">
         <div className="container">
-          <h2 className="text-3xl font-bold text-center">Sıkça sorulan sorular</h2>
+          <h2 className="text-3xl font-bold text-center">Frequently asked questions</h2>
           <Accordion className="w-full" type="multiple">
             {faqs.map((faq: any, faqIndex: number) => (
               <AccordionItem key={faqIndex} value={faqIndex.toString()}>
@@ -210,7 +210,7 @@ export default async function HomePage() {
 
       <section className="bg-primary/10 py-16">
         <div className="container text-center">
-          <h3 className="text-2xl font-bold mb-4">Projeyi desteklemek ister misiniz?</h3>
+          <h3 className="text-2xl font-bold mb-4">Do you want to support the project?</h3>
           <BuyMeACoffeeButton />
         </div>
       </section>

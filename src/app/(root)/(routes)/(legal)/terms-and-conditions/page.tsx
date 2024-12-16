@@ -3,24 +3,21 @@ export default function TermsAndConditionsPage() {
     <main className="py-12 space-y-12">
       <section className="text-center">
         <div className="container space-y-4">
-          <h1 className="text-4xl font-bold">Kullanım Şartları</h1>
+          <h1 className="text-4xl font-bold">Terms and Conditions</h1>
           <p>
-            {process.env.NEXT_PUBLIC_APP_NAME} platformunu kullanmadan önce bu kullanım şartlarını
-            dikkatlice okuyunuz. Platformumuzu kullanarak, bu şartları kabul etmiş sayılırsınız.
+            Please read these terms and conditions carefully before using our platform. By using our
+            platform, you agree to these terms.
           </p>
         </div>
       </section>
 
       <section>
         <div className="container space-y-4">
-          <h2 className="text-2xl font-semibold">Kullanıcı Yükümlülükleri</h2>
+          <h2 className="text-2xl font-semibold">User Responsibilities</h2>
           <ul className="list-disc pl-6 space-y-2">
-            <li>Platforma sağladığınız bilgilerin doğru ve güncel olduğunu taahhüt edersiniz.</li>
-            <li>Hizmetlerimizi yasal olmayan amaçlar için kullanamazsınız.</li>
-            <li>
-              Platformu kullanırken diğer kullanıcıların haklarını ihlal edecek davranışlardan
-              kaçınmalısınız.
-            </li>
+            <li>You commit to providing accurate and up-to-date information to the platform.</li>
+            <li>You cannot use our services for unlawful purposes.</li>
+            <li>You must not violate the rights of other users while using the platform.</li>
           </ul>
         </div>
       </section>
@@ -28,39 +25,38 @@ export default function TermsAndConditionsPage() {
       <section>
         <div className="container space-y-4">
           <h2 className="text-2xl font-semibold">
-            {process.env.NEXT_PUBLIC_APP_NAME}’in Hak ve Sorumlulukları
+            {process.env.NEXT_PUBLIC_APP_NAME}’s Responsibilities and Rights
           </h2>
           <ul className="list-disc pl-6 space-y-2">
             <li>
-              Platformun sürekli ve kesintisiz çalışmasını sağlamak için elimizden geleni yaparız,
-              ancak teknik aksaklıklar nedeniyle hizmet kesintileri yaşanabilir.
+              We do our best to ensure the platform runs continuously and without interruptions, but
+              technical issues may cause service interruptions.
             </li>
             <li>
-              Kullanıcıların sağladığı verilerin güvenliğini sağlamak için gerekli önlemleri alırız.
+              We take necessary measures to ensure the security of the data provided by users.
             </li>
-            <li>Üçüncü taraf bağlantılardan kaynaklanan sorunlardan sorumlu değiliz.</li>
+            <li>We are not responsible for issues arising from third-party connections.</li>
           </ul>
         </div>
       </section>
 
       <section>
         <div className="container space-y-4">
-          <h2 className="text-2xl font-semibold">Fikri Mülkiyet Hakları</h2>
+          <h2 className="text-2xl font-semibold">Intellectual Property Rights</h2>
           <p>
-            Platformda yer alan tüm içerik, tasarım, logo ve diğer materyaller{" "}
-            {process.env.NEXT_PUBLIC_APP_NAME}’ye aittir. İzinsiz olarak kopyalanamaz, dağıtılamaz
-            veya ticari amaçla kullanılamaz.
+            All content, design, logo, and other materials on the platform are owned by{" "}
+            {process.env.NEXT_PUBLIC_APP_NAME}. They cannot be copied, distributed, or used for
+            commercial purposes without permission.
           </p>
         </div>
       </section>
 
       <section>
         <div className="container space-y-4">
-          <h2 className="text-2xl font-semibold">Sorumluluk Reddi</h2>
+          <h2 className="text-2xl font-semibold">Liability Disclaimer</h2>
           <p>
-            {process.env.NEXT_PUBLIC_APP_NAME}, kullanıcılar tarafından oluşturulan içeriklerden
-            sorumlu değildir. Platformun kötüye kullanımı durumunda, yasal sorumluluk tamamen
-            kullanıcıya aittir.
+            {process.env.NEXT_PUBLIC_APP_NAME} is not responsible for content created by users. In
+            case of misuse of the platform, the legal responsibility is entirely with the user.
           </p>
         </div>
       </section>
@@ -69,9 +65,8 @@ export default function TermsAndConditionsPage() {
         <div className="container space-y-4">
           <h2 className="text-2xl font-semibold">Şartların Değiştirilmesi</h2>
           <p>
-            {process.env.NEXT_PUBLIC_APP_NAME}, bu kullanım şartlarını önceden bildirimde
-            bulunmaksızın değiştirme hakkını saklı tutar. Kullanıcılar, bu sayfayı düzenli olarak
-            kontrol etmekle yükümlüdür.
+            {process.env.NEXT_PUBLIC_APP_NAME} reserves the right to modify these terms and
+            conditions without prior notice. Users are responsible for regularly checking this page.
           </p>
         </div>
       </section>

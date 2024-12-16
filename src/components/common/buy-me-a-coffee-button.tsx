@@ -23,7 +23,7 @@ export const BuyMeACoffeeButton = ({
         target="_blank"
       >
         {!hideIcon && <Coffee />}
-        {!hideText && "Bir kahve ile destek ver"}
+        {!hideText && "Support with a coffee"}
       </a>
     </Button>
   );
