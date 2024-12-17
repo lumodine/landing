@@ -22,7 +22,7 @@ const faqs = [
       "After adding your business to the system, you can edit your menus. Our platform delivers your menus to customers through QR codes. Customers can directly access the menu by scanning the QR code.",
   },
   {
-    question: `${process.env.NEXT_PUBLIC_APP_NAME}’in avantajları nelerdir?`,
+    question: `What are the advantages of ${process.env.NEXT_PUBLIC_APP_NAME}?`,
     answer:
       "Fast menu updates, multi-language and currency support, clean and user-friendly interface, and eliminating paper menu expenses are some of the advantages.",
   },
