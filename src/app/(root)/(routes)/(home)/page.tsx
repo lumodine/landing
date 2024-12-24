@@ -32,8 +32,7 @@ const faqs = [
   },
   {
     question: "How are QR codes created?",
-    answer:
-      "QR codes are automatically created through the ${process.env.NEXT_PUBLIC_APP_NAME} panel after adding your business. Changes in the menu do not affect the QR code.",
+    answer: `QR codes are automatically created through the ${process.env.NEXT_PUBLIC_APP_NAME} panel after adding your business. Changes in the menu do not affect the QR code.`,
   },
   {
     question: `${process.env.NEXT_PUBLIC_APP_NAME} QR codes look like in different languages?`,
@@ -59,26 +58,12 @@ const faqs = [
     answer: `${process.env.NEXT_PUBLIC_APP_NAME} is a completely free project. If you want to support the development and continuation of this project, you can support it.`,
   },
   {
-    question: "How can I get support if I have an issue?",
-    answer:
-      "If you have any issues, you can contact us through our contact page. Our support team will assist you as soon as possible.",
-  },
-  {
     question: "Is my data secure?",
     answer: `Yes, ${process.env.NEXT_PUBLIC_APP_NAME} stores your personal data in compliance with GDPR and KVKK. Your data is encrypted and stored securely on our servers.`,
   },
   {
     question: "Can your system work offline?",
     answer: `${process.env.NEXT_PUBLIC_APP_NAME} is a completely online platform. However, customers can cache the menu page after scanning the QR code, and view the content even in case of connection problems.`,
-  },
-  {
-    question: `Do I have multiple branches, can I use ${process.env.NEXT_PUBLIC_APP_NAME}?`,
-    answer:
-      "Yes, with our multi-branch support, you can create separate menus for each of your branches.",
-  },
-  {
-    question: "Can I add my own custom language?",
-    answer: `Yes, ${process.env.NEXT_PUBLIC_APP_NAME} supports adding custom languages. You can create a language that suits your needs and display your menu content in that language.`,
   },
   {
     question: "What devices can customers view the QR menu on?",
