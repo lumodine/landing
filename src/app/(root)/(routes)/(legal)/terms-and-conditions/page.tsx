@@ -63,7 +63,7 @@ export default function TermsAndConditionsPage() {
 
       <section>
         <div className="container space-y-4">
-          <h2 className="text-2xl font-semibold">Şartların Değiştirilmesi</h2>
+          <h2 className="text-2xl font-semibold">Change of Terms</h2>
           <p>
             {process.env.NEXT_PUBLIC_APP_NAME} reserves the right to modify these terms and
             conditions without prior notice. Users are responsible for regularly checking this page.
