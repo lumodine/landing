@@ -59,7 +59,7 @@ export default function AboutUsPage() {
 
       <section>
         <div className="container space-y-4">
-          <h2 className="text-2xl font-semibold">Bizim Hikayemiz</h2>
+          <h2 className="text-2xl font-semibold">Our Story</h2>
           <p>
             {process.env.NEXT_PUBLIC_APP_NAME}, the digitalization need in the restaurant industry
             was identified by a team. The platform we launched in 2024 quickly became a solution
@@ -73,7 +73,7 @@ export default function AboutUsPage() {
 
       <section>
         <div className="container space-y-4">
-          <h2 className="text-2xl font-semibold">Neden {process.env.NEXT_PUBLIC_APP_NAME}?</h2>
+          <h2 className="text-2xl font-semibold">Why {process.env.NEXT_PUBLIC_APP_NAME}?</h2>
           <ul className="list-disc pl-6 space-y-2">
             <li>
               <strong>Easy to Use:</strong> Our user-friendly interface allows you to create your

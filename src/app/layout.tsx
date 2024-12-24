@@ -28,7 +28,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="tr-TR">
+    <html lang="en-US">
       <head>
         <link href="https://cdn.lumodine.com/public/theme.css" rel="stylesheet" />
       </head>
