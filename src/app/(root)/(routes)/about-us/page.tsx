@@ -1,4 +1,9 @@
+import {Metadata} from "next";
 import {BuyMeACoffeeButton} from "@/components/common/buy-me-a-coffee-button";
+
+export const metadata: Metadata = {
+  title: "About Us",
+};
 
 export default function AboutUsPage() {
   return (

@@ -1,3 +1,9 @@
+import {Metadata} from "next";
+
+export const metadata: Metadata = {
+  title: "Cookie Policy",
+};
+
 export default function CookiePolicyPage() {
   return (
     <main className="py-12 space-y-12">

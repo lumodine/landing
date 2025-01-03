@@ -1,3 +1,9 @@
+import {Metadata} from "next";
+
+export const metadata: Metadata = {
+  title: "Terms and Conditions",
+};
+
 export default function TermsAndConditionsPage() {
   return (
     <main className="py-12 space-y-12">
