@@ -134,6 +134,27 @@ export default async function HomePage() {
       </section>
 
       <section className="bg-primary/10 py-16">
+        <div className="container text-center">
+          <h2 className="text-3xl font-bold mb-6">Demo QR Menu</h2>
+          <div className="flex justify-center mb-6">
+            <img
+              alt="Demo QR Code"
+              className="w-40 h-40"
+              src="https://cdn.lumodine.com/6777e577b0e405883d397d0a/q/d4c72634d9e1f974ffc54448100ad4ec45b58f3d4ba3a12814cc41b311f23ff6.png"
+            />
+          </div>
+          <Button asChild size={"lg"} variant={"default"}>
+            <Link
+              href={`${process.env.NEXT_PUBLIC_QR_URL?.replaceAll("{id}", "6777e577b0e405883d397d0a")}/?event=click-link`}
+              target="_blank"
+            >
+              View Demo QR Menu <ExternalLink />
+            </Link>
+          </Button>
+        </div>
+      </section>
+
+      <section className="py-16">
         <div className="container">
           <div className="grid md:grid-cols-2 gap-12">
             <div>
@@ -179,7 +200,7 @@ export default async function HomePage() {
         </div>
       </section>
 
-      <section className="py-16">
+      <section className="bg-primary/10 py-16">
         <div className="container">
           <h2 className="text-3xl font-bold text-center">Frequently asked questions</h2>
           <Accordion className="w-full" type="multiple">
@@ -193,7 +214,7 @@ export default async function HomePage() {
         </div>
       </section>
 
-      <section className="bg-primary/10 py-16">
+      <section className="py-16">
         <div className="container text-center">
           <h3 className="text-2xl font-bold mb-4">Do you want to support the project?</h3>
           <BuyMeACoffeeButton />
