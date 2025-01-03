@@ -1,4 +1,4 @@
-import {Instagram, Mail, X, Youtube} from "lucide-react";
+import {Instagram, X, Youtube} from "lucide-react";
 
 export default [
   {
@@ -15,10 +15,5 @@ export default [
     name: "YouTube",
     url: "https://www.youtube.com/@lumodine",
     icon: Youtube,
-  },
-  {
-    name: "Email",
-    url: "mailto:support@lumodine.com",
-    icon: Mail,
   },
 ];
