@@ -76,6 +76,8 @@ const faqs = [
   },
 ];
 
+const demoTenantId = "6777e577b0e405883d397d0a";
+
 export default async function HomePage() {
   const [{data: currencies}, {data: languages}] = await Promise.all([
     currencyService.getAll(),
@@ -140,12 +142,12 @@ export default async function HomePage() {
             <img
               alt="Demo QR Code"
               className="w-40 h-40"
-              src="https://cdn.lumodine.com/6777e577b0e405883d397d0a/q/d4c72634d9e1f974ffc54448100ad4ec45b58f3d4ba3a12814cc41b311f23ff6.png"
+              src={`https://cdn.lumodine.com/${demoTenantId}/q/9b7b575f400b58c023dc8890bd541b8824f6b8ab615bfc408afc193212238a09.png`}
             />
           </div>
           <Button asChild size={"lg"} variant={"default"}>
             <Link
-              href={`${process.env.NEXT_PUBLIC_QR_URL?.replaceAll("{id}", "6777e577b0e405883d397d0a")}/?event=click-link`}
+              href={`${process.env.NEXT_PUBLIC_QR_URL?.replaceAll("{id}", demoTenantId)}/?event=click-link`}
               target="_blank"
             >
               View Demo QR Menu <ExternalLink />
