@@ -18,7 +18,7 @@ export const BuyMeACoffeeButton = ({
     <Button asChild className="text-primary-foreground" variant={"default"}>
       <a
         className="inline-block"
-        href="https://www.buymeacoffee.com/bilaldemir"
+        href="https://www.buymeacoffee.com/lumodine"
         rel="noreferrer"
         target="_blank"
       >
