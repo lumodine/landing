@@ -11,6 +11,8 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
+export const dynamic = "force-dynamic";
+
 const faqs = [
   {
     question: `What is ${process.env.NEXT_PUBLIC_APP_NAME}?`,
