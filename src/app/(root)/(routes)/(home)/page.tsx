@@ -1,9 +1,10 @@
 import {Banknote, Building2, Check, ExternalLink, Globe, Paintbrush} from "lucide-react";
 import Link from "next/link";
-import {BuyMeACoffeeButton} from "@/components/common/buy-me-a-coffee-button";
 import {Button} from "@/components/ui/button";
 import currencyService from "@/services/currency.service";
 import languageService from "@/services/language.service";
+import subscriptionService from "@/services/subscription.service";
+import {PricingSection} from "@/components/pricing/pricing-section";
 import {
   Accordion,
   AccordionContent,
@@ -57,7 +58,7 @@ const faqs = [
   },
   {
     question: `What are the prices of ${process.env.NEXT_PUBLIC_APP_NAME}?`,
-    answer: `${process.env.NEXT_PUBLIC_APP_NAME} is a completely free project. If you want to support the development and continuation of this project, you can support it.`,
+    answer: `${process.env.NEXT_PUBLIC_APP_NAME} offers subscription plans to access all features. Check our pricing section for available plans.`,
   },
   {
     question: "Is my data secure?",
@@ -81,9 +82,10 @@ const faqs = [
 const demoTenantId = "6777e577b0e405883d397d0a";
 
 export default async function HomePage() {
-  const [{data: currencies}, {data: languages}] = await Promise.all([
-    currencyService.getAll(),
-    languageService.getAll(),
+  const [{data: currencies}, {data: languages}, {data: products}] = await Promise.all([
+    currencyService.getAll().catch(() => ({data: []})),
+    languageService.getAll().catch(() => ({data: []})),
+    subscriptionService.getPlans().catch(() => ({data: []})),
   ]);
 
   return (
@@ -204,6 +206,8 @@ export default async function HomePage() {
         </div>
       </section>
 
+      <PricingSection products={products || []} />
+
       <section className="bg-primary/10 py-16">
         <div className="container">
           <h2 className="text-3xl font-bold text-center">Frequently asked questions</h2>
@@ -215,13 +219,6 @@ export default async function HomePage() {
               </AccordionItem>
             ))}
           </Accordion>
-        </div>
-      </section>
-
-      <section className="py-16">
-        <div className="container text-center">
-          <h3 className="text-2xl font-bold mb-4">Do you want to support the project?</h3>
-          <BuyMeACoffeeButton />
         </div>
       </section>
     </>
