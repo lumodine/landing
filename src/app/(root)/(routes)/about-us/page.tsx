@@ -1,5 +1,4 @@
 import {Metadata} from "next";
-import {BuyMeACoffeeButton} from "@/components/common/buy-me-a-coffee-button";
 
 export const metadata: Metadata = {
   title: "About Us",
@@ -72,7 +71,6 @@ export default function AboutUsPage() {
             solution. Today, hundreds of businesses in dozens of countries use{" "}
             {process.env.NEXT_PUBLIC_APP_NAME} to provide a modern experience for their customers.
           </p>
-          <BuyMeACoffeeButton />
         </div>
       </section>
 
